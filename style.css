@@ -89,7 +89,7 @@
 
 .cardContainer {
   max-width: 1600px;
-  margin: 80px auto 0;
+  margin: 55px auto 0;
   display: flex;
   flex-direction: column;
   row-gap: 30px;
@@ -128,7 +128,7 @@
 .card .card__arrow {
   font-size: 24px;
   position: absolute;
-  right: 15px;
+  right: 40px;
   bottom: 15px;
   width: 54px;
 }
@@ -160,11 +160,11 @@
 }
 .btn-container-line1 {
   top: 50%;
-  left: 0%;
+  left: 30px;
 }
 .btn-container-line2 {
   top: 50%;
-  right: 0%;
+  right: 30px;
 }
 .secondBtn svg{
   position: absolute;
@@ -193,7 +193,7 @@
 }
 .secondBtn {
   border-radius: 0 70px 70px 0;
-  padding-left: 200px;
+  padding-left: 250px;
   position: relative;
   border: 1px solid #FFFFFF;
 }
@@ -288,7 +288,7 @@
   display: flex;
 }
 
-@media(max-width: 1920px) {
+@media(max-width: 1919px) {
   .wrapper {
     padding: 5.2083vw 6.7708vw;
   }
@@ -390,7 +390,7 @@
   }
 }
 
-@media(max-width: 800px) {
+@media(max-width: 799px) {
   .wrapper {
     padding: 0;
   }
