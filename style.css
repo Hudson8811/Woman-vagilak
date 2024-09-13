@@ -262,8 +262,8 @@
   background-color: white;
   padding: 20px;
   border-radius: 8px;
-  max-width: 600px;
-  width: 100%;
+  width: 90%;
+  height: 90%;
   text-align: center;
   position: relative;
 }
@@ -381,7 +381,6 @@
   .popup-content {
     padding: 1.0417vw;
     border-radius: 0.4167vw;
-    max-width: 31.2500vw;
   }
   
   .popup h3 {
