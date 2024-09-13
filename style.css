@@ -282,11 +282,13 @@
   border: none;
 }
 .popup-close::before {
-  content: 'X';
+  content: '';
   position: absolute;
   top: 5%;
   right: 5%;
-  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  background: url('/close.png') 0 0 / 100% 100% no-repeat;
 }
 
 .popup-close:hover {
@@ -391,13 +393,13 @@
     top: 0.5208vw;
     right: 0.7813vw;
     font-size: 0.9375vw;
+    width: 2.0417vw;
+    height: 2.0417vw;
   }
   .popup-close::before {
-    content: 'X';
+    content: '';
     position: absolute;
-    top: 5%;
-    right: 5%;
-    font-size: 20px;
+    background: url('/close.png') 0 0 / 100% 100% no-repeat;
   }
 }
 
@@ -507,7 +509,7 @@
     border: 0.0521vw solid #FFFFFF;
   }
   .popup-content {
-    padding: 5.0417vw;
+    padding: 5.0417vw 5.0417vw 14.0417vw;
     border-radius: 1.4167vw;
     max-width: 80vw;
   }
@@ -523,12 +525,16 @@
   .popup-close {
     top: 1.5208vw;
     right: 1.7813vw;
+    position: absolute;
+    z-index: 99;
+    top: auto;
+    bottom: 3vw;
+    right: 50%;
+    transform: translate(50%, 0);
+    width: 10vw;
+    height: 10vw;
   }
   .popup-close::before {
-    content: 'X';
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    font-size: 5vw;
+    content: '';
   }
 }
