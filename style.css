@@ -52,6 +52,7 @@
   justify-content: center;
   position: relative;
   padding: 100px 130px;
+  min-height: 100vh;
 }
 .bg {
   background: #067836;
@@ -80,11 +81,11 @@
 }
 .bg.active div.bg__pink1 {
   left: 375px;
-  width: 900px;
+  width: 50vw;
 }
 .bg.active div.bg__pink2 {
   right: 60px;
-  width: 900px;
+  width: 50vw;
 }
 
 .cardContainer {
@@ -151,6 +152,7 @@
   border: none;
   border-radius: 0;
   width: 100%;
+  max-width: 1600px;
 }
 .btn-container-line {
   position: absolute;
@@ -160,11 +162,11 @@
 }
 .btn-container-line1 {
   top: 50%;
-  left: 30px;
+  left: 0px;
 }
 .btn-container-line2 {
   top: 50%;
-  right: 30px;
+  right: 0px;
 }
 .secondBtn svg{
   position: absolute;
@@ -279,6 +281,13 @@
   background-color: transparent;
   border: none;
 }
+.popup-close::before {
+  content: 'X';
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 20px;
+}
 
 .popup-close:hover {
   color: #ef5889;
@@ -363,6 +372,9 @@
     border: 0.0521vw solid #FFFFFF;
 
   }
+  .btn-container-wrapper {
+    max-width: 83.3333vw;
+  }
   #firstBtn {
     border: 0.0521vw solid #FFFFFF;
   }
@@ -391,6 +403,9 @@
 }
 
 @media(max-width: 799px) {
+  .btn-container-wrapper {
+    max-width: 100%;
+  }
   .wrapper {
     padding: 0;
   }
