@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Switcher with Popup</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-wrapp">
+      <div class="wrapper">
+        <div class="bg">
+          <div class="bg__pink1"></div>
+          <div class="bg__pink2"></div>
+        </div>
+        <div class="btn-container-wrapper">
+          <div class="btn-container-line btn-container-line1"></div>
+          <div class="btn-container-line btn-container-line2"></div>
+          <div class="btn-container" id="btnContainer">
+            <button class="switch-btn secondBtn change-to-pink" id="toggleBtn">
+              <span class="switch-btn-span-1">секс</span>
+              <span class="switch-btn-span-2">до и после</span>
+              <svg
+                width="82"
+                height="55"
+                viewBox="0 0 82 55"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_51_564)">
+                  <path
+                    d="M53.3496 54.6596L80.5096 27.5096L53.3496 0.349609"
+                    stroke="white"
+                  />
+                </g>
+                <g clip-path="url(#clip1_51_564)">
+                  <path d="M26 55.31L53.16 28.16L26 1" stroke="white" />
+                </g>
+                <g clip-path="url(#clip2_51_564)">
+                  <path
+                    d="M0.349609 54.6596L27.5096 27.5096L0.349609 0.349609"
+                    stroke="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_51_564">
+                    <rect
+                      width="28.21"
+                      height="55.01"
+                      fill="white"
+                      transform="translate(53)"
+                    />
+                  </clipPath>
+                  <clipPath id="clip1_51_564">
+                    <rect
+                      width="28.21"
+                      height="55.01"
+                      fill="white"
+                      transform="translate(25)"
+                    />
+                  </clipPath>
+                  <clipPath id="clip2_51_564">
+                    <rect width="28.21" height="55.01" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+  
+            <button
+              class="switch-btn green-btn firstBtn change-to-green"
+              id="firstBtn"
+            >
+              <span class="switch-btn-span-1">до и после</span>
+              <span class="switch-btn-span-2">секс</span>
+            </button>
+          </div>
+        </div>
+        <div class="cardContainer" id="cardContainer">
+          <div class="card__row card__row-green" data-color="green">
+            <div class="card" data-popup="popup1">
+              <div class="card__arrow">
+                <svg
+                  width="58"
+                  height="30"
+                  viewBox="0 0 58 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 13C0.89543 13 -9.65645e-08 13.8954 0 15C9.65645e-08 16.1046 0.895431 17 2 17L2 13ZM57.4142 16.4142C58.1953 15.6332 58.1953 14.3668 57.4142 13.5858L44.6863 0.857861C43.9052 0.0768119 42.6389 0.0768121 41.8579 0.857861C41.0768 1.63891 41.0768 2.90524 41.8579 3.68629L53.1716 15L41.8579 26.3137C41.0768 27.0948 41.0768 28.3611 41.8579 29.1421C42.6389 29.9232 43.9052 29.9232 44.6863 29.1421L57.4142 16.4142ZM2 17L56 17L56 13L2 13L2 17Z"
+                    fill="#067836"
+                  />
+                </svg>
+              </div>
+              <h3>
+                Гигиена<br />
+                секса
+              </h3>
+              <p>Как перестать стесняться запаха</p>
+            </div>
+            <div class="card" data-popup="popup2">
+              <div class="card__arrow">
+                <svg
+                  width="58"
+                  height="30"
+                  viewBox="0 0 58 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 13C0.89543 13 -9.65645e-08 13.8954 0 15C9.65645e-08 16.1046 0.895431 17 2 17L2 13ZM57.4142 16.4142C58.1953 15.6332 58.1953 14.3668 57.4142 13.5858L44.6863 0.857861C43.9052 0.0768119 42.6389 0.0768121 41.8579 0.857861C41.0768 1.63891 41.0768 2.90524 41.8579 3.68629L53.1716 15L41.8579 26.3137C41.0768 27.0948 41.0768 28.3611 41.8579 29.1421C42.6389 29.9232 43.9052 29.9232 44.6863 29.1421L57.4142 16.4142ZM2 17L56 17L56 13L2 13L2 17Z"
+                    fill="#067836"
+                  />
+                </svg>
+              </div>
+              <h3>
+                Финал<br />
+                подвел
+              </h3>
+              <p>Неприятные ощущения после секса</p>
+            </div>
+            <div class="card" data-popup="popup3">
+              <div class="card__arrow">
+                <svg
+                  width="58"
+                  height="30"
+                  viewBox="0 0 58 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 13C0.89543 13 -9.65645e-08 13.8954 0 15C9.65645e-08 16.1046 0.895431 17 2 17L2 13ZM57.4142 16.4142C58.1953 15.6332 58.1953 14.3668 57.4142 13.5858L44.6863 0.857861C43.9052 0.0768119 42.6389 0.0768121 41.8579 0.857861C41.0768 1.63891 41.0768 2.90524 41.8579 3.68629L53.1716 15L41.8579 26.3137C41.0768 27.0948 41.0768 28.3611 41.8579 29.1421C42.6389 29.9232 43.9052 29.9232 44.6863 29.1421L57.4142 16.4142ZM2 17L56 17L56 13L2 13L2 17Z"
+                    fill="#067836"
+                  />
+                </svg>
+              </div>
+              <h3>
+                Знакомство, первые<br />
+                контакты
+              </h3>
+              <p>Как поговорить с новым партнером об интимном дискомфорте?</p>
+            </div>
+            <div class="card" data-popup="popup4">
+              <div class="card__arrow">
+                <svg
+                  width="58"
+                  height="30"
+                  viewBox="0 0 58 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 13C0.89543 13 -9.65645e-08 13.8954 0 15C9.65645e-08 16.1046 0.895431 17 2 17L2 13ZM57.4142 16.4142C58.1953 15.6332 58.1953 14.3668 57.4142 13.5858L44.6863 0.857861C43.9052 0.0768119 42.6389 0.0768121 41.8579 0.857861C41.0768 1.63891 41.0768 2.90524 41.8579 3.68629L53.1716 15L41.8579 26.3137C41.0768 27.0948 41.0768 28.3611 41.8579 29.1421C42.6389 29.9232 43.9052 29.9232 44.6863 29.1421L57.4142 16.4142ZM2 17L56 17L56 13L2 13L2 17Z"
+                    fill="#067836"
+                  />
+                </svg>
+              </div>
+              <h3>
+                География<br />
+                поцелуев
+              </h3>
+              <p>Запрет на определенные виды секса</p>
+            </div>
+            <div class="card" data-popup="popup5">
+              <div class="card__arrow">
+                <svg
+                  width="58"
+                  height="30"
+                  viewBox="0 0 58 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 13C0.89543 13 -9.65645e-08 13.8954 0 15C9.65645e-08 16.1046 0.895431 17 2 17L2 13ZM57.4142 16.4142C58.1953 15.6332 58.1953 14.3668 57.4142 13.5858L44.6863 0.857861C43.9052 0.0768119 42.6389 0.0768121 41.8579 0.857861C41.0768 1.63891 41.0768 2.90524 41.8579 3.68629L53.1716 15L41.8579 26.3137C41.0768 27.0948 41.0768 28.3611 41.8579 29.1421C42.6389 29.9232 43.9052 29.9232 44.6863 29.1421L57.4142 16.4142ZM2 17L56 17L56 13L2 13L2 17Z"
+                    fill="#067836"
+                  />
+                </svg>
+              </div>
+              <h3>
+                Страхи неприятных<br />
+                ощущений<br />
+                после секса
+              </h3>
+              <p>Что делать?</p>
+            </div>
+          </div>
+          <div class="card__row card__row-pink" data-color="pink">
+            <div class="card" data-popup="popup6">
+              <div class="card__arrow">
+                <svg
+                  width="58"
+                  height="30"
+                  viewBox="0 0 58 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 13C0.89543 13 -9.65645e-08 13.8954 0 15C9.65645e-08 16.1046 0.895431 17 2 17L2 13ZM57.4142 16.4142C58.1953 15.6332 58.1953 14.3668 57.4142 13.5858L44.6863 0.857861C43.9052 0.0768119 42.6389 0.0768121 41.8579 0.857861C41.0768 1.63891 41.0768 2.90524 41.8579 3.68629L53.1716 15L41.8579 26.3137C41.0768 27.0948 41.0768 28.3611 41.8579 29.1421C42.6389 29.9232 43.9052 29.9232 44.6863 29.1421L57.4142 16.4142ZM2 17L56 17L56 13L2 13L2 17Z"
+                    fill="#067836"
+                  />
+                </svg>
+              </div>
+              <h3 class="pink">
+                "Не хочу лежать<br />
+                бревном"
+              </h3>
+              <p>Дискомфорт при сексе и как с ним бороться</p>
+            </div>
+            <div class="card" data-popup="popup7">
+              <div class="card__arrow">
+                <svg
+                  width="58"
+                  height="30"
+                  viewBox="0 0 58 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 13C0.89543 13 -9.65645e-08 13.8954 0 15C9.65645e-08 16.1046 0.895431 17 2 17L2 13ZM57.4142 16.4142C58.1953 15.6332 58.1953 14.3668 57.4142 13.5858L44.6863 0.857861C43.9052 0.0768119 42.6389 0.0768121 41.8579 0.857861C41.0768 1.63891 41.0768 2.90524 41.8579 3.68629L53.1716 15L41.8579 26.3137C41.0768 27.0948 41.0768 28.3611 41.8579 29.1421C42.6389 29.9232 43.9052 29.9232 44.6863 29.1421L57.4142 16.4142ZM2 17L56 17L56 13L2 13L2 17Z"
+                    fill="#067836"
+                  />
+                </svg>
+              </div>
+              <h3 class="pink">
+                Я его стесняюсь <br />и кажется, что <br />ничего не получится
+              </h3>
+              <p>Когда стоит подумать о лубриканте и как его выбрать</p>
+            </div>
+            <div class="card" data-popup="popup8">
+              <div class="card__arrow">
+                <svg
+                  width="58"
+                  height="30"
+                  viewBox="0 0 58 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 13C0.89543 13 -9.65645e-08 13.8954 0 15C9.65645e-08 16.1046 0.895431 17 2 17L2 13ZM57.4142 16.4142C58.1953 15.6332 58.1953 14.3668 57.4142 13.5858L44.6863 0.857861C43.9052 0.0768119 42.6389 0.0768121 41.8579 0.857861C41.0768 1.63891 41.0768 2.90524 41.8579 3.68629L53.1716 15L41.8579 26.3137C41.0768 27.0948 41.0768 28.3611 41.8579 29.1421C42.6389 29.9232 43.9052 29.9232 44.6863 29.1421L57.4142 16.4142ZM2 17L56 17L56 13L2 13L2 17Z"
+                    fill="#067836"
+                  />
+                </svg>
+              </div>
+              <h3 class="pink">С ним все хорошо, <br />а секс не в радость</h3>
+              <p>Бросать или остаться?</p>
+            </div>
+            <div class="card" data-popup="popup9">
+              <div class="card__arrow">
+                <svg
+                  width="58"
+                  height="30"
+                  viewBox="0 0 58 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 13C0.89543 13 -9.65645e-08 13.8954 0 15C9.65645e-08 16.1046 0.895431 17 2 17L2 13ZM57.4142 16.4142C58.1953 15.6332 58.1953 14.3668 57.4142 13.5858L44.6863 0.857861C43.9052 0.0768119 42.6389 0.0768121 41.8579 0.857861C41.0768 1.63891 41.0768 2.90524 41.8579 3.68629L53.1716 15L41.8579 26.3137C41.0768 27.0948 41.0768 28.3611 41.8579 29.1421C42.6389 29.9232 43.9052 29.9232 44.6863 29.1421L57.4142 16.4142ZM2 17L56 17L56 13L2 13L2 17Z"
+                    fill="#067836"
+                  />
+                </svg>
+              </div>
+              <h3 class="pink">Сухость <br />при сексе</h3>
+              <p>Что делать?</p>
+            </div>
+            <div class="card" data-popup="popup10">
+              <div class="card__arrow">
+                <svg
+                  width="58"
+                  height="30"
+                  viewBox="0 0 58 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 13C0.89543 13 -9.65645e-08 13.8954 0 15C9.65645e-08 16.1046 0.895431 17 2 17L2 13ZM57.4142 16.4142C58.1953 15.6332 58.1953 14.3668 57.4142 13.5858L44.6863 0.857861C43.9052 0.0768119 42.6389 0.0768121 41.8579 0.857861C41.0768 1.63891 41.0768 2.90524 41.8579 3.68629L53.1716 15L41.8579 26.3137C41.0768 27.0948 41.0768 28.3611 41.8579 29.1421C42.6389 29.9232 43.9052 29.9232 44.6863 29.1421L57.4142 16.4142ZM2 17L56 17L56 13L2 13L2 17Z"
+                    fill="#067836"
+                  />
+                </svg>
+              </div>
+              <h3 class="pink">"Не хочу <br />с ним секса!"</h3>
+              <p>Почему женщины отказывают партнеру</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup Containers -->
+    <div class="popup" id="popup1">
+      <div class="popup-content">
+        <button class="popup-close"></button>
+        <h3>Гигиена секса</h3>
+        <p>
+          Как перестать стесняться запаха? Вот несколько полезных советов...
+        </p>
+      </div>
+    </div>
+    <div class="popup" id="popup2">
+      <div class="popup-content">
+        <button class="popup-close"></button>
+        <h3>Финал подвел</h3>
+        <p>Что делать, если финал сексуального акта не оправдал ожиданий?</p>
+      </div>
+    </div>
+    <div class="popup" id="popup3">
+      <div class="popup-content">
+        <button class="popup-close"></button>
+        <h3>Финал подвел</h3>
+        <p>Что делать, если финал сексуального акта не оправдал ожиданий?</p>
+      </div>
+    </div>
+    <div class="popup" id="popup4">
+      <div class="popup-content">
+        <button class="popup-close"></button>
+        <h3>Финал подвел</h3>
+        <p>Что делать, если финал сексуального акта не оправдал ожиданий?</p>
+      </div>
+    </div>
+    <div class="popup" id="popup5">
+      <div class="popup-content">
+        <button class="popup-close"></button>
+        <h3>Финал подвел</h3>
+        <p>Что делать, если финал сексуального акта не оправдал ожиданий?</p>
+      </div>
+    </div>
+    <div class="popup" id="popup6">
+      <div class="popup-content">
+        <button class="popup-close"></button>
+        <h3>Финал подвел</h3>
+        <p>Что делать, если финал сексуального акта не оправдал ожиданий?</p>
+      </div>
+    </div>
+    <div class="popup" id="popup7">
+      <div class="popup-content">
+        <button class="popup-close"></button>
+        <h3>Финал подвел</h3>
+        <p>Что делать, если финал сексуального акта не оправдал ожиданий?</p>
+      </div>
+    </div>
+    <div class="popup" id="popup8">
+      <div class="popup-content">
+        <button class="popup-close"></button>
+        <h3>Финал подвел</h3>
+        <p>Что делать, если финал сексуального акта не оправдал ожиданий?</p>
+      </div>
+    </div>
+    <div class="popup" id="popup9">
+      <div class="popup-content">
+        <button class="popup-close"></button>
+        <h3>Финал подвел</h3>
+        <p>Что делать, если финал сексуального акта не оправдал ожиданий?</p>
+      </div>
+    </div>
+    <div class="popup" id="popup10">
+      <div class="popup-content">
+        <button class="popup-close"></button>
+        <h3>Финал подвел</h3>
+        <p>Что делать, если финал сексуального акта не оправдал ожиданий?</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
