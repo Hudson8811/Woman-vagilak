@@ -399,7 +399,7 @@
   .popup-close::before {
     content: '';
     position: absolute;
-    background: url('/close.png') 0 0 / 100% 100% no-repeat;
+    background: url('./close.png') 0 0 / 100% 100% no-repeat;
   }
 }
 
